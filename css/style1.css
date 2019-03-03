@@ -1,0 +1,373 @@
+body {
+	margin: 0; 
+}
+
+/* first section */
+
+.first, .second, .third, .fourth {
+	width: 100%;
+	height: 100vh;
+}
+.color1{
+	position: absolute;
+	width: 100%;
+	height: 400px;
+	background-color: #03BBD3;
+	transform-origin: top left;
+	transform: skewY(-35deg);
+	z-index: 2;
+	margin: 0; 
+}
+.color2{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	background-color: #B1EAF1;
+	transform-origin: top right;
+	transform: skewY(8deg);
+	z-index: 1;
+	margin: 0;
+}
+.color3{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 400px;
+	background-color: #3498DB;
+	transform-origin: top right;
+	transform: skewY(27deg);
+	z-index: 2;
+	margin: 0;
+}
+.color4{
+	position: absolute;
+	top: 120%;
+	width: 100%;
+	height: 100px;
+	background-color: #B1EAF1;
+	transform-origin: top left;
+	transform: skewY(-4deg);
+	z-index: 2;
+	margin: 0;
+}
+.color4:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	transform-origin: top right;
+	background-color: #03BBD3;
+	transform: skewY(12deg);
+}
+.content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 51;
+	color: #0A3D62;	
+}
+#intro {
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 8px;
+	word-spacing: 10px;
+	font-size: 60px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 15%;
+	font-weight: 900;
+}
+.content hr {
+	height: 5px;
+	width: 850px;
+	position: relative;
+	top: -50px;
+	background-color: blue;
+}
+.signature {
+	margin: 0;
+}
+.signature p {
+	font-family: 'Dancing Script';
+	font-size: 60px;
+	text-align: center;
+	font-weight: 900;
+	transform: skewY(-15deg);
+}
+.signature p span {
+	top: 50%;
+}
+
+
+/* second section */
+
+#about{
+	margin-top: 200px;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+
+#about:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 8%;
+	margin-top: 37px;
+	margin-left: -105px;
+	background-color: red;
+}
+
+.desc {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 60px;
+}
+.desc p {
+	text-align: justify;
+	font-size: 16px;
+	line-height: 24px;
+	color: black;
+}
+
+ .img {
+ 	margin-top: 40px;
+	background-color: rgba(31, 31, 31, .35);
+	width: 350px;
+	height: 350px;
+	border-radius: 7px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.img img {
+	width: 350px;
+	height: 350px;
+	border-radius: 7px;
+	transition: opacity 0.8s;
+}
+.img img:hover{
+	opacity: 0;
+}
+.img:hover {
+	background-image: url("images/mine.jpg");
+}
+
+
+
+/* Third section */
+/*Project Section*/
+
+
+.third hr {
+	height: 3px;
+	width: 7%;
+	background-color: red;
+	margin-top: -15px;s
+}
+
+#project {
+	text-align: center;
+	font-size: 26px;
+}
+
+.main_cards {
+	margin-top: 80px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.first_Card, .sec_Card {
+    position: relative;
+	width: 370px;
+	height: 400px;
+	float: left;
+	border-radius: 10px;
+	margin-bottom: 100px;
+}
+
+.first_Card {
+	margin-right: 200px;
+}
+
+.card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	border-radius: 10px;
+}
+
+.Front_End {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: black;
+	background: #e8eef2;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.Front_End h2 {
+	text-align: center;
+	font-family: "Dancing Script";
+	font-size: 40px;
+}
+
+.Front_End p {
+	text-align: center;
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: 80px;
+}
+
+.card:hover{
+	transform: rotateY(180deg);
+	margin-left: 55px;
+}
+
+.Back_End {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #e8eef2;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	border-radius: 10px;
+	padding: 30px;
+}
+.Back_End img {
+	height: 200px;
+}
+
+.Back_End p {
+	text-align: center;
+	font-family: "Dancing Script";
+	font-size: 20px;
+	margin-top: 60px;
+}
+
+.Back_End a {
+	margin-top: 30px;
+	color: black;
+	position: absolute;
+	left: 45%;
+}
+
+.Back_End a i {
+	font-size: 50px;
+	margin: 0 auto;
+}
+
+
+
+/* Fourth section */
+/*technologies section*/
+
+
+.fourth{
+	margin-top: 500px;
+}
+#tech{
+	margin-top: 400px;
+	text-align: center; 	
+	font-size: 30px;
+}
+#technologies {
+	text-align: center;
+	font-family: 'Dancing Script';
+	font-size: 25px;
+}
+.fourth hr {
+	height: 3px;
+	width: 10%;
+	background-color: red;
+	margin-top: -14px;	
+}
+
+.fourth marquee {
+	margin-top: 50px;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.fourth marquee i {
+	font-size: 100px;
+}
+
+
+/* Fifth section */
+
+
+.fifth {
+	margin-top: -360px;
+}
+#contact{
+	margin-top: 0;
+	text-align: center;
+	color: black;
+	font-size: 25px;
+}
+.fifth hr {
+	height: 3px;
+	width: 9%;
+	background-color: red;
+	margin-top: -14px;	
+}
+.fifth .icons {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: 30px;
+}
+.fifth .icons i {
+	font-size: 50px;
+	margin-right: 15px;
+	color: #4F67B1;
+}
+.fifth .icons i:hover {
+	color: #37B3C0;
+}
+
+
+
+.footer {
+	margin-top: 150px;
+	height: 220px;
+	width: 100%;
+	position: relative;
+	overflow:hidden;
+}
+.footer:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 200px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #38b4c1;
+	transform-origin: top right;
+	transform: skewY(-5deg);
+	overflow:hidden;
+}
+.footer i {
+	color: red;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.footer p {
+	letter-spacing: 2px;
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	top: 130px;
+	transform: translate(-50%);
+	z-index: 58;
+}
