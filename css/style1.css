@@ -386,8 +386,8 @@ body {
 }
 
 .first_Card, .sec_Card {
-	width: 220px;
-	height: 350px;
+	width: 230px;
+	height: 400px;
 	border-radius: 10px;
 }
 
@@ -398,15 +398,15 @@ body {
 }
 
 .fourth marquee {
-	margin-top: 50px;
-	width: 90%;
+	margin-top: 40px;
+	width: 100%;
 }
 .fourth marquee i {
 	font-size: 100px;
 }
 
 .fifth {
-	margin-top: 130%;
+	margin-top: 180%;
 }
 
 .fifth .icons i {
