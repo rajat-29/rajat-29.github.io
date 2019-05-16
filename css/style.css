@@ -20,6 +20,7 @@ body {
     flex-shrink: 0;
     height: 100vh;
     object-fit: cover;
+    animation : 'fade';
 }
 
 
@@ -55,32 +56,6 @@ body {
 }
 .disp_name .heading .sub {
     font-size: 24px;
-}
-
-/* next and previos button */
-
-.slides-navigation {
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-}
-
-.slides-navigation .prev,
-.slides-navigation .next{
-    height: 47px;
-    width: 47px;
-}
-.slides-navigation a.prev {
-    position: relative;
-    /*left: 20px;*/
-    float: right;
-    right: 5px;
-}
-.slides-navigation a.next {
-    /*right: 20px;*/
-
 }
 
 /* second section */
