@@ -1,0 +1,327 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.mySlides {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.356);
+}
+
+
+.disp_name {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 30%;
+    z-index: 2;
+    text-align: center;
+}
+
+.disp_name .heading p,span {
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.disp_name .heading .main {
+    /*font-family: 'Vollkorn', serif;*/
+    font-size: 50px;
+}
+.disp_name .heading .sub {
+    font-size: 24px;
+}
+
+/* next and previos button */
+
+.slides-navigation {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next{
+    height: 47px;
+    width: 47px;
+}
+.slides-navigation a.prev {
+    position: relative;
+    /*left: 20px;*/
+    float: right;
+    right: 5px;
+}
+.slides-navigation a.next {
+    /*right: 20px;*/
+
+}
+
+/* second section */
+
+#second {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    scroll-snap-align: start;
+}
+#second h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: black;
+}
+#second hr {
+    position: relative;
+    top: -10px;
+    width: 80px;
+    height: 2px;
+    background-color: #FF0000;
+    margin-bottom: 4%;
+    border: none;
+}
+#second p {
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+    font-family: serif;
+}
+#second div {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: #000;
+}
+#second img {
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+/* third section */
+
+#third {
+    width: 100%;
+    height: 100vh;
+    background-color: #2B2A30;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#third h1 {
+    position: relative;
+    left: -10%;
+    z-index: 2;
+    font-size: 80px;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    transform: rotate(270deg);
+}
+
+.projectdiv {
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+}
+.projectdiv img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+
+.blacklayer {
+    width: 400px;   
+    height: 200px;  
+    background-color: rgba(0, 0, 0, .3);
+    pointer-events: none;
+    transition: all 1s;
+}
+
+
+
+/* fourth section */
+
+
+#fourth {
+    padding-top: 1%;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    overflow: hidden;
+}
+#fourth h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 33px;
+}
+
+#fourth p {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    margin-top: 1px;
+}
+.slider {
+    margin: 0 auto;
+    position: relative;
+    width: 85%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 3%;
+}
+.slide {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    animation: slideshow 13s linear infinite;
+}
+.slide i {
+    font-size: 120px;
+    padding: 0 30px 0 30px;
+}
+
+.icons {
+    text-align: center;
+    font-size: 50px;
+}
+.icons i {
+    color: #4F67B1;
+    margin-right: 4px;
+}
+
+.footer {
+    margin-top: 6%;
+    background-color: #38B4C1;
+    height: 150px;
+    transform: skewY(-5deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer i {
+    color: red;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.footer p {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: serif;
+    transform: skewY(5deg);
+    margin-top: -25px;
+}
+@keyframes slideshow {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+@media(max-width: 450px) {
+    .circle h1 {
+        display: none;
+    }
+    #main nav ul .last {
+        display: none;
+    }
+    #main nav ul li {
+        margin-right: 20px;
+    }
+    #main div {
+        margin-top: 20%;
+    }
+    #main div h1 {
+        font-size: 16px;
+    }
+    #main div h1 span {
+        font-size: 24px;
+    }
+    #main div p {
+        margin-left: 15%;
+        width: 80%;
+        margin-bottom: 70%;
+    }
+    #btn1{
+        margin-left: 10%;
+        margin-bottom: 10%;
+        display: block;
+    }
+    #btn2 {
+        display: block;
+    }
+    #second p{
+        width: 90%;
+        line-height: 20px;
+        font-size: 14px;
+        margin-bottom: 10%;
+    }
+    #second div {
+        width: 200px;
+        height: 200px;
+    }
+    #second img {
+        width: 200px;
+        height: 200px;
+    }
+    #third td {
+        float: left;
+    }
+    #third h1 {
+        left: -1%;
+        font-size: 40px;
+    }
+    .projectdiv {
+        width: 210px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    #fourth {
+        height: 650px;
+    }
+    #fourth h1 {
+        margin-top: 14%;
+    }
+    .footer {
+        margin-top: 15%;
+    }
+}
