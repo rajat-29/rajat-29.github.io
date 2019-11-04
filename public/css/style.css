@@ -1,0 +1,340 @@
+﻿
+ @import url(http://fonts.googleapis.com/css?family=Anton|Maven+Pro:500,700); 
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 25px;
+    position: relative;
+}
+
+.pad-bottom {
+    padding-bottom: 60px;
+}
+
+section {
+    padding-bottom: 10px;
+    padding-top: 70px;
+}
+
+.btn {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+
+
+
+.set-bk-clr {
+    /*background-color: #FF2276; */
+    background-color: rgb(218, 119, 156);
+}
+
+.clr-set {
+    color: rgb(218, 119, 156);
+}
+
+.f-big {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.set-bk-clr:hover {
+    background-color: rgba(247, 192, 213, 0.67);
+}
+/*==============================
+NAVBAR STYLES
+==============================*/
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.navbar-brand {
+padding:16px;
+
+}
+    .navbar-brand img {
+        height:50px;
+    }
+.navbar-default .navbar-toggle {
+    border-color: #FFF;
+}
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    font-weight: 900;
+}
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: #000;
+        text-decoration: none;
+    }
+
+.navbar-default {
+    background-color: rgb(218, 119, 156);
+    border-color: transparent;
+}
+
+.navbar {
+    padding: 15px;
+    -webkit-transition: background .8s ease-out,padding .8s ease-out;
+    -moz-transition: background .8s ease-out,padding .8s ease-out;
+    transition: background .8s ease-out,padding .8s ease-out;
+}
+
+.navbar-pad-original {
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+
+/* =============================================================
+  HEADER SECTION STYLES
+ ============================================================ */
+
+#header {
+    background: url(../img/home.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+    #header .overlay {
+        background-color: rgba(3, 3, 3, 0.8);
+        min-height: 700px;
+    }
+
+    #header h1 {
+        line-height: 60px;
+        font-size: 45px;
+        font-weight: 900;
+        padding-top: 180px;
+        padding-bottom: 35px;
+        color:rgb(218, 119, 156);;
+    }
+
+
+    #header h4 {
+        line-height: 30px;
+        font-size: 35px;
+        padding-bottom: 0px;
+       /* text-transform: uppercase; */
+        color:#f2dede;;
+    }
+
+/*================================
+    ABOUT ME STYLES
+==================================*/
+#aboutme {
+    background-color: rgba(237, 237, 237, 1); 
+}
+
+    #aboutme i {
+        font-size: 80px;
+        padding: 30px;
+        color: #FF2276;
+    }
+
+    #aboutme h2 {
+        padding-bottom: 5px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
+        text-align: center;
+        font-family: cursive;
+        font-size: 32px;
+        color: #3e0529;
+    }
+
+    #mypic
+    {
+        float: right;
+        align: right;
+    }
+    #about
+    {
+        align : left;
+    }
+/* =============================================================
+  EDUCATION SECTION STYLES
+ ============================================================ */
+#education h2
+{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 32px;
+    color: #3e0529;
+}
+#education {
+     padding-top: 26px;
+    margin-top: 40px;
+}
+#edu
+{
+    height: 35px;
+}
+
+
+
+#skills
+{
+ 
+    padding: 60px 0;
+    position: relative;
+}
+
+#skills h2
+{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 32px;
+    color: #3e0529;
+}
+
+.item
+{
+    margin: 0px;
+    
+}
+.progress
+{
+    margin-bottom: 0px;
+}
+
+/* =============================================================
+  PROJECTS SECTION STYLES
+ ============================================================ */
+#projects {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#projects img{
+    width: 400px;
+    height: 200px; 
+    margin: 15px;
+}
+
+.card-body
+{
+    padding-left: 40px;
+}
+
+
+
+
+#projects h2
+{
+   /* padding-bottom: 5px;
+    padding-top: 10px; */
+    margin-bottom: 25px;
+    align-self: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    color: #3e0529;
+}
+#projects h5
+{
+   /* padding-bottom: 5px;
+    padding-top: 10px; */
+    margin-bottom: 25px;
+    align-self: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    color: #3e0529;
+}
+#git
+{
+    align-self: center;
+    text-align: center;
+}
+
+.btn-outline-primary {
+    color: #5e416b;
+    background-color: transparent;
+    background-image: none;
+    border-color: #301233;
+}
+
+/* =============================================================
+  CONTACT SECTION STYLES
+ ============================================================ */
+#contact {
+  
+     background-color: rgba(237, 237, 237, 1);
+}
+#contact span{
+    margin-left: 10px;
+}
+#contact h2
+{
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    color: #3e0529;
+}
+.icons {
+   
+    font-size: 50px;
+    float: left;
+}
+#c1
+{
+    font-size: 25px;
+    float: right;
+}
+
+/* =============================================================
+  FOOTER SECTION STYLES
+ ============================================================ */
+footer {
+    padding: 20px;
+ 
+    margin-bottom: 0px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    background-color: rgba(237, 237, 237, 1);
+    cursor: pointer;
+}
+
+
